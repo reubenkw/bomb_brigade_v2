@@ -85,8 +85,7 @@ class Game:
 
         for bomb in self.bombs:
             if bomb.detonation_tick <= self.tick:
-                bomb.explode(self.map, (self.player1, self.player2))
-                self.bombs.remove(bomb)
+                bomb.explode(self.map, (self.player1, self.player2), self.bombs, self.tick)
 
         if self.player1.health <= 0 and self.player2.health <= 0:
             self.outcome = "Tie"

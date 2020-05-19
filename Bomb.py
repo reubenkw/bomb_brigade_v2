@@ -24,7 +24,7 @@ class Bomb:
         self.x = x0
         self.y = y0
 
-    def explode(self, game_map: Map, players: Player):
+    def explode(self, game_map: Map, players: Player, bombs, tick):
         protected_tiles = []
         for square in Bomb.expRad:
             x, y = square
@@ -46,6 +46,7 @@ class Bomb:
             dy *= 2
 
             while n > 0:
+                # print(game_map.grid[math.floor(crnt_x)][math.floor(crnt_y)].get_item_type())
                 if game_map.grid[math.floor(crnt_x)][math.floor(crnt_y)].get_item_type() == "wall" \
                         and (math.floor(crnt_x), math.floor(crnt_y)) != (x, y):
                     protected_tiles.append((x, y))
@@ -60,19 +61,33 @@ class Bomb:
 
                 n -= 1
 
+        bombs.remove(self)
+        toExplode = []
         for x, y in Bomb.expRad:
             x += self.x
             y += self.y
 
             if (x, y) not in protected_tiles and Cfg.tiles_x > x >= 0 and Cfg.tiles_y > y >= 0:
                 game_map.tiles2update.append((x, y))
-                if (x, y) == (self.x, self.y) or \
-                        game_map.grid[x][y].get_item_type() != "bomb_active":
+
+                if game_map.grid[x][y].get_item_type() == "bomb_active" and (x, y) != (self.x, self.y):
+                    for bomb in bombs:
+                        if (x, y) == (bomb.x, bomb.y):
+                            toExplode.append(bomb)
+                elif game_map.grid[x][y].get_item_type() == "bomb_inactive":
+                    game_map.grid[x][y].set_item("bomb_active")
+                    bombs.append(Bomb(x, y, tick))
+                else:
                     game_map.grid[x][y].set_item("none")
+
                 game_map.grid[x][y].set_terrain("burnt")
+
                 for player in players:
                     if (player.x, player.y) == (x, y):
                         player.health -= 1
 
                         # for info display optimization
                         player.update_info = True
+
+        for bomb in toExplode:
+            bomb.explode(game_map, players, bombs, tick)

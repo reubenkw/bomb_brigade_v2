@@ -10,17 +10,10 @@ class Map:
         self.grid = [[Tile("grass", "none") for _ in range(Cfg.tiles_y)] for _ in range(Cfg.tiles_x)]
         self.tiles2update = []
 
-        self.resource_gen(Cfg.walls_num_deposit, Cfg.walls_deposit_size, player_positions)
+        self.resource_gen_spread(Cfg.walls_num_deposit, Cfg.walls_deposit_size, player_positions)
 
-        for _ in range(Cfg.bombs_num_deposit):
-            x, y = self.rand_empty_pos(player_positions)
-            if (x, y) != (-1, -1):
-                self.grid[x][y].set_item("bomb_inactive")
-
-        for _ in range(Cfg.health_num_deposit):
-            x, y = self.rand_empty_pos(player_positions)
-            if (x, y) != (-1, -1):
-                self.grid[x][y].set_item("heart")
+        self.resource_gen_spot("bomb_inactive", Cfg.bombs_num_deposit, player_positions)
+        self.resource_gen_spot("heart", Cfg.health_num_deposit, player_positions)
 
     def res_recursive(self, pos, prob, not_allowed):
         if pos in not_allowed:
@@ -37,12 +30,19 @@ class Map:
         if y > 0 and self.grid[x][y - 1].get_item_type() == "none" and random.random() < prob:
             self.res_recursive((x, y - 1), prob - 0.01, not_allowed)
 
-    def resource_gen(self, num_deposits, prob, not_allowed):
+    def resource_gen_spread(self, num_deposits, prob, not_allowed):
         for _ in range(num_deposits):
             x, y = self.rand_empty_pos(not_allowed)
             if (x, y) != (-1, -1):
                 self.grid[x][y].set_item("wall")
                 self.res_recursive((x, y), prob, not_allowed)
+
+    def resource_gen_spot(self, resource, num_deposits, not_allowed):
+        for _ in range(num_deposits):
+            x, y = self.rand_empty_pos(not_allowed)
+            if (x, y) != (-1, -1):
+                self.grid[x][y].set_item(resource)
+                self.tiles2update.append((x, y))
 
     def rand_empty_pos(self, not_allowed):
         tries = 0
@@ -64,6 +64,8 @@ class Map:
                                 return x, y
 
                     return -1, -1
+
+    # def spawn_resource(self, resource, player_positions):
 
     def update_tiles(self, win):
         for x, y in self.tiles2update:

@@ -7,6 +7,7 @@ clock = pg.time.Clock()
 
 while game.outcome == "TBD":
     clock.tick(Cfg.fps)
+    print(clock.get_fps())
 
     p1_action = ""
     p2_action = ""
@@ -64,3 +65,5 @@ while game.outcome == "TBD":
         p2_action = "MOVE_LEFT"
 
     game.loop(p1_action, p2_action)
+
+print(game.outcome)

@@ -1,6 +1,7 @@
 import pygame as pg
 from Config import Cfg
 from Map import Map
+from Tile import Tile
 
 
 class Player:
@@ -13,6 +14,8 @@ class Player:
         self.y = y0
         self.image = image0
         self.name = name0
+
+        self.update_info = True
 
     def move_up(self, game_map: Map):
         game_map.tiles2update.append((self.x, self.y))
@@ -75,19 +78,77 @@ class Player:
 
             self.bombs += 1
             game_map.grid[x][y].set_item("none")
+
+            # for info display optimization
+            self.update_info = True
         elif tile_resource == "wall" and self.walls < Cfg.walls_max:
 
             self.walls += 1
             game_map.grid[x][y].set_item("none")
+
+            # for info display optimization
+            self.update_info = True
         elif tile_resource == "heart" and self.health < Cfg.health_max:
 
             self.health += 1
             game_map.grid[x][y].set_item("none")
 
-    def draw(self, win):
-        image = self.image
-        win.blit(pg.transform.rotate(image, - 90 - 90 * self.look_dir), (self.x * Cfg.tile_width, self.y * Cfg.tile_height))
+            # for info display optimization
+            self.update_info = True
 
+    def draw(self, win):
+        win.blit(pg.transform.rotate(self.image, - 90 - 90 * self.look_dir),
+                 (self.x * Cfg.tile_width, self.y * Cfg.tile_height))
+
+    def display_stats(self, win, position, colour):
+
+        text_spacing = 65
+        font = pg.font.SysFont(None, 60)
+
+        spacing = 16
+        image_scaling = 2
+        image_size = Cfg.tile_width * image_scaling
+
+        # PlayerName
+        # Health Icons (5x1 max)
+        # Bomb Icons (5x1 max)
+        # Wall Icons (5x3 max)
+
+        x, y = position
+        x += spacing
+        y += spacing
+        font = pg.font.SysFont(None, 32)
+        text = font.render(self.name, True, pg.Color(colour))
+        win.blit(text, (x, y))
+
+        def draw_row(icon, num, pos):
+            crnt_x, crnt_y = pos
+            for _ in range(num):
+                win.blit(icon, (crnt_x, crnt_y))
+                crnt_x += image_size + spacing
+
+        x, y = position
+        x += spacing
+        y += spacing * 2 + image_size
+        image = pg.transform.scale(Tile.get_item_image("heart"), (image_size, image_size))
+        draw_row(image, self.health, (x, y))
+
+        x, y = position
+        x += spacing
+        y += spacing * 3 + image_size * 2
+        image = pg.transform.scale(Tile.get_item_image("bomb_inactive"), (image_size, image_size))
+        draw_row(image, self.bombs, (x, y))
+
+        x, y = position
+        x += spacing * 6 + image_size * 5
+        y += spacing
+        image = pg.transform.scale(Tile.get_item_image("wall"), (image_size, image_size))
+        for row in range(int(self.walls / 5) + 1):
+            draw_row(image, min(5, self.walls - row * 5), (x, y))
+
+            y += image_size + spacing
+
+    # Used for debugging
     def print(self):
         print(str(self.name) + "[Health: " + str(self.health) + ", Bombs: "
               + str(self.bombs) + ", Walls: " + str(self.walls) + "]")

@@ -44,3 +44,8 @@ class Tile:
 
         if self.item != 0:
             win.blit(Tile.item_images[self.item], (x * Cfg.tile_width, y * Cfg.tile_height))
+
+    @staticmethod
+    def get_item_image(item):
+        index = Tile.item_types.index(item)
+        return Tile.item_images[index]

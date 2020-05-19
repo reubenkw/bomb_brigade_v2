@@ -31,6 +31,9 @@ class Bomb:
             x += self.x
             y += self.y
 
+            if not (0 <= x < Cfg.tiles_x and 0 <= y < Cfg.tiles_y):
+                continue
+
             dx = abs(x - self.x)
             dy = abs(y - self.y)
             crnt_x = self.x + 0.5
@@ -57,15 +60,19 @@ class Bomb:
 
                 n -= 1
 
-        for square in Bomb.expRad:
-            xSquare, ySquare = square
-            xSquare += self.x
-            ySquare += self.y
+        for x, y in Bomb.expRad:
+            x += self.x
+            y += self.y
 
-            if (xSquare, ySquare) not in protected_tiles and Cfg.tiles_x > xSquare >= 0 and Cfg.tiles_y > ySquare >= 0:
-                game_map.tiles2update.append((xSquare, ySquare))
-                if (xSquare, ySquare) == (self.x, self.y) or game_map.grid[xSquare][ySquare].get_item_type() != "bomb_active":
-                    game_map.grid[xSquare][ySquare].set_item("none")
-                game_map.grid[xSquare][ySquare].set_terrain("burnt")
+            if (x, y) not in protected_tiles and Cfg.tiles_x > x >= 0 and Cfg.tiles_y > y >= 0:
+                game_map.tiles2update.append((x, y))
+                if (x, y) == (self.x, self.y) or \
+                        game_map.grid[x][y].get_item_type() != "bomb_active":
+                    game_map.grid[x][y].set_item("none")
+                game_map.grid[x][y].set_terrain("burnt")
                 for player in players:
-                    dist = math.sqrt((xSquare - player.x) ** 2 + (ySquare - player.y) ** 2)
+                    if (player.x, player.y) == (x, y):
+                        player.health -= 1
+
+                        # for info display optimization
+                        player.update_info = True

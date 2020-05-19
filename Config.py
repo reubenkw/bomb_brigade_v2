@@ -1,4 +1,6 @@
 class Cfg:
+	output_images = False
+
 	tiles_x = 80
 	tiles_y = 48
 
@@ -31,4 +33,9 @@ class Cfg:
 	walls_num_deposit = 3
 	walls_deposit_size = 0.7
 
-	fps = 12
+	burning_delay = 50
+
+	border_shrink_delay = 2000
+	border_shrink_rate = 50
+
+	fps = 10

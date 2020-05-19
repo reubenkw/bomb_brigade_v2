@@ -14,7 +14,9 @@ class Player:
         self.y = y0
         self.image = image0
         self.name = name0
+        self.last_burning = 0
 
+        # for info display optimization
         self.update_info = True
 
     def move_up(self, game_map: Map):
@@ -147,6 +149,17 @@ class Player:
             draw_row(image, min(5, self.walls - row * 5), (x, y))
 
             y += image_size + spacing
+
+    def check_burning(self, game_map: Map):
+
+        if game_map.grid[self.x][self.y].get_terrain_type() == "burning" and self.last_burning > Cfg.burning_delay:
+            self.last_burning = 0
+            self.health -= 1
+
+            # for info display optimization
+            self.update_info = True
+        else:
+            self.last_burning += 1
 
     # Used for debugging
     def print(self):

@@ -6,13 +6,13 @@ from Tile import Tile
 
 
 class Bomb:
-
+    # does not include 0,0
     expRad = [
         (-2, 4), (-1, 4), (0, 4), (1, 4), (2, 4),
         (-3, 3), (-2, 3), (-1, 3), (0, 3), (1, 3), (2, 3), (3, 3),
         (-4, 2), (-3, 2), (-2, 2), (-1, 2), (0, 2), (1, 2), (2, 2), (3, 2), (4, 2),
         (-4, 1), (-3, 1), (-2, 1), (-1, 1), (0, 1), (1, 1), (2, 1), (3, 1), (4, 1),
-        (-4, 0), (-3, 0), (-2, 0), (-1, 0), (0, 0), (1, 0), (2, 0), (3, 0), (4, 0),
+        (-4, 0), (-3, 0), (-2, 0), (-1, 0),         (1, 0), (2, 0), (3, 0), (4, 0),
         (-4, -1), (-3, -1), (-2, -1), (-1, -1), (0, -1), (1, -1), (2, -1), (3, -1), (4, -1),
         (-4, -2), (-3, -2), (-2, -2), (-1, -2), (0, -2), (1, -2), (2, -2), (3, -2), (4, -2),
         (-3, -3), (-2, -3), (-1, -3), (0, -3), (1, -3), (2, -3), (3, -3),
@@ -61,6 +61,10 @@ class Bomb:
 
                 n -= 1
 
+        game_map.tiles2update.append((self.x, self.y))
+        game_map.grid[self.x][self.y].set_terrain("burning")
+        game_map.grid[self.x][self.y].set_item("none")
+
         bombs.remove(self)
         toExplode = []
         for x, y in Bomb.expRad:
@@ -80,7 +84,8 @@ class Bomb:
                 else:
                     game_map.grid[x][y].set_item("none")
 
-                game_map.grid[x][y].set_terrain("burnt")
+                if game_map.grid[x][y].get_terrain_type() != "burning":
+                    game_map.grid[x][y].set_terrain("burnt")
 
                 for player in players:
                     if (player.x, player.y) == (x, y):

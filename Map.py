@@ -65,7 +65,36 @@ class Map:
 
                     return -1, -1
 
-    # def spawn_resource(self, resource, player_positions):
+    def shrink_border(self, width):
+        for y in range(width):
+            for x in range(Cfg.tiles_x):
+                y2 = Cfg.tiles_y - y - 1
+
+                if self.grid[x][y].get_item_type() == "wall":
+                    self.grid[x][y].set_item("none")
+                if self.grid[x][y2].get_item_type() == "wall":
+                    self.grid[x][y2].set_item("none")
+
+                self.grid[x][y].set_terrain("burning")
+                self.grid[x][y2].set_terrain("burning")
+
+                self.tiles2update.append((x, y))
+                self.tiles2update.append((x, y2))
+
+        for x in range(width):
+            for y in range(width, Cfg.tiles_y - width):
+                x2 = Cfg.tiles_x - x - 1
+
+                if self.grid[x][y].get_item_type() == "wall":
+                    self.grid[x][y].set_item("none")
+                if self.grid[x2][y].get_item_type() == "wall":
+                    self.grid[x2][y].set_item("none")
+
+                self.grid[x][y].set_terrain("burning")
+                self.grid[x2][y].set_terrain("burning")
+
+                self.tiles2update.append((x, y))
+                self.tiles2update.append((x2, y))
 
     def update_tiles(self, win):
         for x, y in self.tiles2update:

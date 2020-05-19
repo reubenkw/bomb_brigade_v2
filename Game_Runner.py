@@ -25,7 +25,13 @@ while game.outcome == "TBD":
 
     elif keys[pg.K_SLASH]:
         # place bomb
-        p1_action = "BOMB"
+        p1_action = "BOMB_ACTIVE"
+
+    elif keys[pg.K_SEMICOLON]:
+        p1_action = "BOMB_INACTIVE"
+
+    elif keys[pg.K_l]:
+        p1_action = "HEALTH"
 
     elif keys[pg.K_UP]:
         p1_action = "MOVE_UP"
@@ -40,7 +46,7 @@ while game.outcome == "TBD":
         p1_action = "MOVE_LEFT"
 
     # player2
-    if keys[pg.K_f]:
+    if keys[pg.K_h]:
         # build wall
         p2_action = "WALL"
 
@@ -48,9 +54,15 @@ while game.outcome == "TBD":
         # harvest
         p2_action = "HARVEST"
 
-    elif keys[pg.K_h]:
+    elif keys[pg.K_f]:
         # place bomb
-        p2_action = "BOMB"
+        p2_action = "BOMB_ACTIVE"
+
+    elif keys[pg.K_r]:
+        p2_action = "BOMB_INACTIVE"
+
+    elif keys[pg.K_t]:
+        p2_action = "HEALTH"
 
     elif keys[pg.K_w]:
         p2_action = "MOVE_UP"

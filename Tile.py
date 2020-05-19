@@ -3,9 +3,10 @@ from Config import Cfg
 
 
 class Tile:
-    terrain_types = ["grass", "burnt"]
+    terrain_types = ["grass", "burnt", "burning"]
     terrain_images = [pg.transform.scale(pg.image.load("textures/grass.png"), (Cfg.tile_width, Cfg.tile_height)),
-                      pg.transform.scale(pg.image.load("textures/burnt.png"), (Cfg.tile_width, Cfg.tile_height))]
+                      pg.transform.scale(pg.image.load("textures/burnt.png"), (Cfg.tile_width, Cfg.tile_height)),
+                      pg.transform.scale(pg.image.load("textures/burning.png"), (Cfg.tile_width, Cfg.tile_height))]
 
     item_types = ["none", "wall", "heart", "bomb_inactive", "bomb_active"]
     item_images = [None,

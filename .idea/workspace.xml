@@ -1,7 +1,274 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a232791-5fa5-40cd-9d50-f1f6fb5414e4" name="Default Changelist" comment="" />
+    <list default="true" id="6a232791-5fa5-40cd-9d50-f1f6fb5414e4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Bomb Brigade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Bomb Brigade.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/reube.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/reube.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bomb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game_Runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game_Runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Map.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/131.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/132.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/135.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/136.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/138.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/139.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/148.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/149.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/151.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/153.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/154.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/155.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/156.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/157.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/158.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/159.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/160.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/161.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/162.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/163.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/164.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/169.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/170.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/171.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/172.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/173.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/174.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/175.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/176.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/177.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/178.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/179.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/181.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/182.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/183.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/184.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/185.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/186.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/187.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/188.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/189.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/190.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/193.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/194.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/195.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/196.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/197.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/198.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/199.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/201.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/202.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/203.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/204.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/205.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/206.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/207.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/208.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/209.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/210.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/211.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/212.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/213.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/214.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/215.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/216.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/217.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/218.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/219.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/221.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/222.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/223.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/224.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/225.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/226.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/227.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/228.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/229.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/230.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/231.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/232.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/233.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/234.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/235.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/236.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/237.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/238.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/239.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/241.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/242.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/243.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/244.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/245.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/246.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/247.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/248.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/249.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/250.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/251.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/252.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/253.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/254.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/255.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/99.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,16 +287,47 @@
   <component name="ProjectId" id="1bPnxQJFrshY5tYEGfhscAqxhYQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/Scripts/conda.exe" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\reube\OneDrive\Documents\GitHub\bomb_brigade_v2" />
+      <recent name="C:\Users\reube\OneDrive\Documents\GitHub\bomb_brigade_v2\Game_Files" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\reube\OneDrive\Documents\GitHub\bomb_brigade_v2" />
+      <recent name="C:\Users\reube\OneDrive\Documents\GitHub\bomb_brigade_v2\Game Files" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Game_Runner">
+    <configuration name="AI_Trainer" type="PythonConfigurationType" factoryName="Python">
+      <module name="Bomb Brigade" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\reube\Anaconda3\envs\tf\pythonw.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AI_Trainer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Game_Runner" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Bomb Brigade" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -37,9 +335,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Python38\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Game_Runner.py" />
@@ -51,18 +349,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Bomb Brigade" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\reube\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Game_Files" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Game_Runner" />
+      <item itemvalue="Python.AI_Trainer" />
+      <item itemvalue="Python.test" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -78,50 +390,78 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588787635992">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588787635992" />
-    <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1588786939969">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588786939969" />
-    <state width="1899" height="229" key="GridCell.Tab.0.bottom" timestamp="1589908806357">
+    <state x="552" y="178" key="#Notifications" timestamp="1590717904945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="229" key="GridCell.Tab.0.bottom/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589908806357" />
+    <state x="552" y="178" key="#Notifications/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1590717904945" />
+    <state x="279" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591452509399">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="279" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1591452509399" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591377417570" />
+    <state x="685" y="211" key="FileChooserDialogImpl" timestamp="1591452406213">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="685" y="211" key="FileChooserDialogImpl/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1591452406213" />
+    <state x="239" y="101" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591376145008" />
+    <state width="1899" height="210" key="GridCell.Tab.0.bottom" timestamp="1591452482802">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="210" key="GridCell.Tab.0.bottom/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1591452482802" />
     <state width="1210" height="229" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-328.1920.1040@-1920.-328.1920.1040" timestamp="1589809966386" />
-    <state width="1515" height="160" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589078763188" />
-    <state width="1899" height="229" key="GridCell.Tab.0.center" timestamp="1589908806356">
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591376946681" />
+    <state width="1899" height="210" key="GridCell.Tab.0.center" timestamp="1591452482802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="229" key="GridCell.Tab.0.center/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589908806356" />
+    <state width="1899" height="210" key="GridCell.Tab.0.center/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1591452482802" />
     <state width="1210" height="229" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-328.1920.1040@-1920.-328.1920.1040" timestamp="1589809966386" />
-    <state width="1515" height="160" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589078763188" />
-    <state width="1899" height="229" key="GridCell.Tab.0.left" timestamp="1589908806356">
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591376946681" />
+    <state width="1899" height="210" key="GridCell.Tab.0.left" timestamp="1591452482801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="229" key="GridCell.Tab.0.left/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589908806356" />
+    <state width="1899" height="210" key="GridCell.Tab.0.left/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1591452482801" />
     <state width="1210" height="229" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-328.1920.1040@-1920.-328.1920.1040" timestamp="1589809966386" />
-    <state width="1515" height="160" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589078763188" />
-    <state width="1899" height="229" key="GridCell.Tab.0.right" timestamp="1589908806357">
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591376946681" />
+    <state width="1899" height="210" key="GridCell.Tab.0.right" timestamp="1591452482802">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="229" key="GridCell.Tab.0.right/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589908806357" />
+    <state width="1899" height="210" key="GridCell.Tab.0.right/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1591452482802" />
     <state width="1210" height="229" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-328.1920.1040@-1920.-328.1920.1040" timestamp="1589809966386" />
-    <state width="1515" height="160" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589078763188" />
-    <state x="-1352" y="-107" key="SettingsEditor" timestamp="1589753270375">
-      <screen x="-1920" y="-328" width="1920" height="1040" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591376946681" />
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1590780140869">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.bottom/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1590780140869" />
+    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1590780140869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.center/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1590780140869" />
+    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1590780140869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.left/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1590780140869" />
+    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1590780140869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="348" key="GridCell.Tab.1.right/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1590780140869" />
+    <state x="346" y="67" key="SettingsEditor" timestamp="1591452459758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="346" y="67" key="SettingsEditor/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1591452459758" />
     <state x="-1352" y="-107" key="SettingsEditor/0.0.1536.824/-1920.-328.1920.1040@-1920.-328.1920.1040" timestamp="1589753270375" />
-    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588796075475" />
+    <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1591376480434" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590164824552">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1590164824552" />
     <state x="399" y="0" width="738" height="824" key="find.popup" timestamp="1588543605786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="399" y="0" width="738" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1588543605786" />
-    <state x="431" y="145" width="670" height="676" key="search.everywhere.popup" timestamp="1588786704883">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="539" y="183" width="838" height="854" key="search.everywhere.popup" timestamp="1591448381313">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="431" y="145" width="670" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588786704883" />
+    <state x="539" y="183" width="838" height="854" key="search.everywhere.popup/-1920.284.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1591448381313" />
+    <state x="431" y="145" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591372014957" />
   </component>
 </project>

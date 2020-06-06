@@ -1,81 +1,92 @@
-from Game import Game
+from Game_Files.Game import Game
 import pygame as pg
-from Config import Cfg
+from Game_Files.Config import Cfg
+
+
+def find_arrow_move(keys_down) -> str:
+    if keys_down[pg.K_COMMA]:
+        # build wall
+        return "WALL"
+
+    elif keys_down[pg.K_PERIOD]:
+        # harvest
+        return "HARVEST"
+
+    elif keys_down[pg.K_SLASH]:
+        # place bomb
+        return "BOMB_ACTIVE"
+
+    elif keys_down[pg.K_SEMICOLON]:
+        return "BOMB_INACTIVE"
+
+    elif keys_down[pg.K_l]:
+        return "HEALTH"
+
+    elif keys_down[pg.K_UP]:
+        return "MOVE_UP"
+
+    elif keys_down[pg.K_DOWN]:
+        return "MOVE_DOWN"
+
+    elif keys_down[pg.K_RIGHT]:
+        return "MOVE_RIGHT"
+
+    elif keys_down[pg.K_LEFT]:
+        return "MOVE_LEFT"
+
+    else:
+        return ""
+
+
+def find_wasd_move(keys_down) -> str:
+    if keys_down[pg.K_h]:
+        # build wall
+        return "WALL"
+
+    elif keys_down[pg.K_g]:
+        # harvest
+        return "HARVEST"
+
+    elif keys_down[pg.K_f]:
+        # place bomb
+        return "BOMB_ACTIVE"
+
+    elif keys_down[pg.K_r]:
+        return "BOMB_INACTIVE"
+
+    elif keys_down[pg.K_t]:
+        return "HEALTH"
+
+    elif keys_down[pg.K_w]:
+        return "MOVE_UP"
+
+    elif keys_down[pg.K_s]:
+        return "MOVE_DOWN"
+
+    elif keys_down[pg.K_d]:
+        return "MOVE_RIGHT"
+
+    elif keys_down[pg.K_a]:
+        return "MOVE_LEFT"
+
+    else:
+        return ""
+
 
 game = Game()
 clock = pg.time.Clock()
 
 while game.outcome == "TBD":
     clock.tick(Cfg.fps)
-    # print(clock.get_fps())
-
-    p1_action = ""
-    p2_action = ""
-
     keys = pg.key.get_pressed()
 
     # player1
-    if keys[pg.K_COMMA]:
-        # build wall
-        p1_action = "WALL"
-
-    elif keys[pg.K_PERIOD]:
-        # harvest
-        p1_action = "HARVEST"
-
-    elif keys[pg.K_SLASH]:
-        # place bomb
-        p1_action = "BOMB_ACTIVE"
-
-    elif keys[pg.K_SEMICOLON]:
-        p1_action = "BOMB_INACTIVE"
-
-    elif keys[pg.K_l]:
-        p1_action = "HEALTH"
-
-    elif keys[pg.K_UP]:
-        p1_action = "MOVE_UP"
-
-    elif keys[pg.K_DOWN]:
-        p1_action = "MOVE_DOWN"
-
-    elif keys[pg.K_RIGHT]:
-        p1_action = "MOVE_RIGHT"
-
-    elif keys[pg.K_LEFT]:
-        p1_action = "MOVE_LEFT"
+    p1_action = find_arrow_move(keys)
 
     # player2
-    if keys[pg.K_h]:
-        # build wall
-        p2_action = "WALL"
-
-    elif keys[pg.K_g]:
-        # harvest
-        p2_action = "HARVEST"
-
-    elif keys[pg.K_f]:
-        # place bomb
-        p2_action = "BOMB_ACTIVE"
-
-    elif keys[pg.K_r]:
-        p2_action = "BOMB_INACTIVE"
-
-    elif keys[pg.K_t]:
-        p2_action = "HEALTH"
-
-    elif keys[pg.K_w]:
-        p2_action = "MOVE_UP"
-
-    elif keys[pg.K_s]:
-        p2_action = "MOVE_DOWN"
-
-    elif keys[pg.K_d]:
-        p2_action = "MOVE_RIGHT"
-
-    elif keys[pg.K_a]:
-        p2_action = "MOVE_LEFT"
+    p2_action = find_wasd_move(keys)
 
     game.loop(p1_action, p2_action)
+
 
 print(game.outcome)

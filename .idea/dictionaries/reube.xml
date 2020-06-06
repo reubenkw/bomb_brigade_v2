@@ -2,6 +2,8 @@
   <dictionary name="reube">
     <words>
       <w>crnt</w>
+      <w>crossentropy</w>
+      <w>epoc</w>
     </words>
   </dictionary>
 </component>
